@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_operator</title>
+</head>
+
+<body>
+    <h2> Operators</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demoz"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <script>
+        // Arithmetic Operatoruse [ +,-, *, / ]  //
+        var x = 20;
+        var y = 15;
+        var z = x + y;
+        document.getElementById("demo").innerHTML = z;
+        // var a = 100;
+        // var b = 20;
+        // console.log("the value a + b is ", a + b);
+        // console.log("the value a - b is ", a - b);
+        // console.log("the value a * b is ", a * b);
+        // console.log("the value a / b is ", a / b);
+
+        // Comparison operator use ==, ===, !=, !==, >, >=, <, <= //
+        var a = y < x;
+        document.getElementById("demo1").innerHTML = a;
+        // var x = 100;
+        // var y = 20;
+        // console.log (x == y);
+        // console.log ( x >= y);
+        // console.log ( x <= y);
+        // console.log ( x < y);
+        // console.log ( x > y);
+
+        // Bitwise Operator use &, |, ^, ~, <<, >>, >>> //
+        var b = ~x;
+        // ~ [ Invert all the bits]
+        //  the bitwise NOT operator[~] inverts the bits of its operand.
+        //  like other bitwise operators, it converts the operand to a 32-bit signed integer 
+        // x = 20{10100} invert {01011} = 11
+        // moore need to learn thic concept 
+        document.getElementById("demo2").innerHTML = b;
+
+        //Logical operator use [ &&, ||, ! ] //
+        var c = x && y;
+        document.getElementById("demo3").innerHTML = c;
+
+        var z = x || y;
+        document.getElementById("demoz").innerHTML = z;
+
+        /*var w = x ! y;
+        document.getElementById("demow").innerHTML = w;
+
+        ! not worked here find out the problem */
+
+
+        // Logical AND [&&] operator
+        // console.log(true && false)
+        // console.log(true && true)
+        // console.log(false && false)
+        // console.log(false && true)
+
+        // console.log(true || true)
+        // Logical OR [||] operator
+        // console.log(true || false)
+        // console.log(false || true)
+        // console.log(false || false)
+
+        // Logical NOT{!} [true to - false , flase to - true]
+        // console.log(!false)
+        // console.log(!true)
+
+        // Assignment operator use =, +=, -=, *=, /=, %= //
+        x += 4;
+        document.getElementById("demo5").innerHTML = x;
+        x += 1;
+        document.getElementById("demo6").innerHTML = x;
+        y -= 2;
+        document.getElementById("demo7").innerHTML = y;
+        y *= 5;
+        document.getElementById("demo8").innerHTML = y;
+        y /= 5;
+        document.getElementById("demo9").innerHTML = y;
+        y %= 5;
+        // 13 divided by 5 remainder [3] will be the result
+        document.getElementById("demo10").innerHTML = y;
+
+        // Conditional operator//
+        var d = (x > y) ?100:200;
+        document.getElementById("demo11").innerHTML = d;
+        //TypeOf operator//
+        var str ="hello";
+        var result1 = (typeof str =="string"?"str is String":"str is Numeric");
+        var result2 = (typeof x =="string"?"x is String":"x is Numeric");
+        document.write("<b>TypeOf Operator</b>");
+        document.write("<br>");
+        document.write(result1);
+        document.write("<br>");
+        document.write(result2);
+        //String operator//
+        var string1 ="Hello";
+        var string2 ="JS";
+        var string = string1 +" "+ string2;
+        document.write("<br>");
+        document.write("<b>String Concatenation Operator</b>");
+        document.write("<br>");
+        document.write(string);
+        document.write("<br>");
+        document.write("Hello"+ y);
+        document.write("<br>");
+        string += "Operators";
+        document.write("<b>Assignment Operator as String Concatenation Operator</b>");
+        document.write("<br>");
+        document.write(string);
+        </script>
+</body>
+
+</html>
+</script>
+</body>
+
+</html>

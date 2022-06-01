@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- The typeof Operator
+You can use the typeof operator to find the data type of a JavaScript variable.
+
+Example
+typeof "John"                 // Returns "string"
+typeof 3.14                   // Returns "number"
+typeof NaN                    // Returns "number"
+typeof false                  // Returns "boolean"
+typeof [1,2,3,4]              // Returns "object"
+typeof {name:'John', age:34}  // Returns "object"
+typeof new Date()             // Returns "object"
+typeof function () {}         // Returns "function"
+typeof myCar                  // Returns "undefined" *
+typeof null                   // Returns "object" -->
+
+<!-- Please observe:
+
+The data type of NaN is number
+The data type of an array is object
+The data type of a date is object
+The data type of null is object
+The data type of an undefined variable is undefined *
+The data type of a variable that has not been assigned a value is also undefined *
+
+Note -You cannot use typeof to determine if a JavaScript object is an array (or a date). -->
+
+<!-- Primitive Data
+
+A primitive data value is a single simple data value with no additional properties and methods.
+
+The typeof operator can return one of these primitive types:
+
+string
+number
+boolean
+undefined
+Example
+typeof "John"              // Returns "string"
+typeof 3.14                // Returns "number"
+typeof true                // Returns "boolean"
+typeof false               // Returns "boolean"
+typeof x                   // Returns "undefined" (if x has no value) -->
+
+<!-- Complex Data
+
+The typeof operator can return one of two complex types:
+
+function
+object
+The typeof operator returns "object" for objects, arrays, and null.
+
+The typeof operator does not return "object" for functions.
+
+Example
+typeof {name:'John', age:34} // Returns "object"
+typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
+typeof null                  // Returns "object"
+typeof function myFunc(){}   // Returns "function" -->
+
+<h2>The JavaScript constructor Property</h2>
+
+<p>The constructor property returns the constructor function for a variable or an 
+object.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+  "john".constructor + "<br>" +
+  (3.14).constructor + "<br>" +
+  false.constructor + "<br>" +
+  [1,2,3,4].constructor + "<br>" +
+  {name:'john', age:34}.constructor + "<br>" +
+  new Date().constructor + "<br>" +
+  function () {}.constructor;
+</script>
+
+<!-- Undefined
+In JavaScript, a variable without a value, has the value undefined. The type is also undefined. -->
+
+<h2>JavaScript</h2>
+
+<p>The value (and the data type) of a variable with no value is <b>undefined</b>.</p>
+
+<p id="demo1"></p>
+
+<script>
+let car;
+document.getElementById("demo1").innerHTML =
+car + "<br>" + typeof car;
+</script>
+
+<!-- Null
+
+In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+
+Unfortunately, in JavaScript, the data type of null is an object.
+
+You can consider it a bug in JavaScript that typeof null is an object. It should be null.
+
+You can empty an object by setting it to null: -->
+
+<h2>JavaScript</h2>
+
+<p>Objects can be emptied by setting the value to <b>null</b>.</p>
+
+<p id="demo2"></p>
+
+<script>
+let person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+person = null;
+document.getElementById("demo2").innerHTML = typeof person;
+</script>
+
+<!-- Difference Between Undefined and Null
+undefined and null are equal in value but different in type:
+
+typeof undefined           // undefined
+typeof null                // object
+
+null === undefined         // false
+null == undefined          // true -->
+    
+</body>
+</html>
